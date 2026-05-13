@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header / Home Section */
+header {
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #dbeafe;
+}
+
+header a {
+  display: inline-block;
+  background: white;
+  color: #1e40af;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background: #dbeafe;
+}
+
+/* Section Design */
+section {
+  width: 85%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #1e40af;
+  margin-bottom: 15px;
+  font-size: 28px;
+  border-bottom: 3px solid #1e40af;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skills span {
+  background: #e0ecff;
+  color: #1e40af;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Project Cards */
+.project {
+  background: #f8fafc;
+  padding: 20px;
+  margin-top: 15px;
+  border-left: 5px solid #1e40af;
+  border-radius: 10px;
+}
+
+.project h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+/* Contact Links */
+.contact a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Mobile Friendly */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  section {
+    width: 92%;
+    padding: 22px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+}
