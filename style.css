@@ -367,12 +367,9 @@ body::after {
   width: 144px;
   height: 144px;
   border-radius: 50%;
+  object-fit: cover;
   background: #0b0b14;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
-  font-weight: 900;
+  border: 4px solid #0b0b14;
   animation: rotateBack 8s linear infinite;
 }
 
