@@ -1,78 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nahum Chowdhury - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Nahum Chowdhury</h1>
-    <p>Software Engineering Student at DIU</p>
-    <a href="cv.pdf">Download CV</a>
+  <nav>
+    <h2>Nahum</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="tagline">Hello, I'm</p>
+      <h1>Nahum Chowdhury</h1>
+      <h3>Software Engineering Student</h3>
+      <p>
+        I am passionate about programming, web development, database management,
+        and building practical software projects.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="cv.pdf" class="btn secondary">Download CV</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="profile-circle">NC</div>
+      <h2>Nahum Chowdhury</h2>
+      <p>DIU Software Engineering Student</p>
+      <div class="small-info">
+        <span>C Programmer</span>
+        <span>Web Learner</span>
+        <span>SQL Practice</span>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Software Engineering student interested in programming, web development,
-      database management, and technology. I enjoy learning new skills and building
-      practical projects.
-    </p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>C</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>SQL</span>
-      <span>GitHub</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p>
-      BSc in Software Engineering<br>
-      Daffodil International University
-    </p>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Employee Management System</h3>
-      <p>
-        A software project for managing employees, salary, attendance,
-        performance, and reports.
-      </p>
+  <section id="about" class="section">
+    <div class="section-title">
+      <p>Introduction</p>
+      <h2>About Me</h2>
     </div>
 
-    <div class="project">
-      <h3>SQL Lab Project</h3>
+    <div class="about-box">
       <p>
-        A database practice project using SQL queries, joins, grouping,
-        and table relationships.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>C Programming Practice</h3>
-      <p>
-        Problem-solving practice using C programming, including loops,
-        functions, arrays, and basic algorithms.
+        I am a Software Engineering student at Daffodil International University.
+        I enjoy learning programming, solving problems, working with databases,
+        and creating web-based projects. My goal is to improve my technical skills
+        and build useful software solutions.
       </p>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: nahumchowdhury123@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/NahumChowdhury">github.com/NahumChowdhury</a></p>
+  <section id="skills" class="section">
+    <div class="section-title">
+      <p>My Abilities</p>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">C Programming</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">GitHub</div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="section-title">
+      <p>Academic Background</p>
+      <h2>Education</h2>
+    </div>
+
+    <div class="timeline-card">
+      <h3>BSc in Software Engineering</h3>
+      <p>Daffodil International University</p>
+      <span>Currently Studying</span>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-title">
+      <p>My Work</p>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Employee Management System</h3>
+        <p>
+          A software project for managing employee information, salary,
+          attendance, performance, and reports.
+        </p>
+        <a href="#">View Details</a>
+      </div>
+
+      <div class="project-card">
+        <h3>SQL Lab Project</h3>
+        <p>
+          A database practice project using SQL queries, joins, grouping,
+          ordering, and table relationships.
+        </p>
+        <a href="#">View Details</a>
+      </div>
+
+      <div class="project-card">
+        <h3>C Programming Practice</h3>
+        <p>
+          Problem-solving practice using loops, arrays, functions,
+          conditions, and basic algorithms in C.
+        </p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-title">
+      <p>Get In Touch</p>
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact-box">
+      <p>Email:nahumchowdhury123@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/NahumChowdhury">github.com/NahumChowdhury</a></p>
+      <p>Location: Bangladesh</p>
+    </div>
   </section>
 
   <footer>
@@ -81,3 +147,4 @@
 
 </body>
 </html>
+   
