@@ -1,150 +1,321 @@
+
+                         
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nahum Chowdhury - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nahum Chowdhury | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav>
-    <h2>Nahum</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-circle">N</div>
+      <span>Nahum<span>Chowdhury</span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+
+    <a href="cv.pdf" class="resume-btn">Resume</a>
   </nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <p class="tagline">Hello, I'm</p>
-      <h1>Nahum Chowdhury</h1>
-      <h3>Software Engineering Student</h3>
-      <p>
-        I am passionate about programming, web development, database management,
-        and building practical software projects.
-      </p>
+  <main class="slides">
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="cv.pdf" class="btn secondary">Download CV</a>
-      </div>
-    </div>
+    <section class="slide home-slide active-section" id="home">
+      <div class="bg-orb orb-one"></div>
+      <div class="bg-orb orb-two"></div>
 
-    <div class="hero-card">
-      <div class="profile-circle">NC</div>
-      <h2>Nahum Chowdhury</h2>
-      <p>DIU Software Engineering Student</p>
-      <div class="small-info">
-        <span>C Programmer</span>
-        <span>Web Learner</span>
-        <span>SQL Practice</span>
-      </div>
-    </div>
-  </header>
-
-  <section id="about" class="section">
-    <div class="section-title">
-      <p>Introduction</p>
-      <h2>About Me</h2>
-    </div>
-
-    <div class="about-box">
-      <p>
-        I am a Software Engineering student at Daffodil International University.
-        I enjoy learning programming, solving problems, working with databases,
-        and creating web-based projects. My goal is to improve my technical skills
-        and build useful software solutions.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <div class="section-title">
-      <p>My Abilities</p>
-      <h2>Skills</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card">C Programming</div>
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">GitHub</div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <div class="section-title">
-      <p>Academic Background</p>
-      <h2>Education</h2>
-    </div>
-
-    <div class="timeline-card">
-      <h3>BSc in Software Engineering</h3>
-      <p>Daffodil International University</p>
-      <span>Currently Studying</span>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="section-title">
-      <p>My Work</p>
-      <h2>Projects</h2>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Employee Management System</h3>
-        <p>
-          A software project for managing employee information, salary,
-          attendance, performance, and reports.
+      <div class="home-content reveal">
+        <p class="small-title">SOFTWARE ENGINEERING STUDENT</p>
+        <h1>
+          Hi, I'm <span>Nahum Chowdhury</span>
+        </h1>
+        <p class="hero-text">
+          I build clean, modern, and useful digital solutions while learning
+          programming, web development, database systems, and software engineering.
         </p>
-        <a href="#">View Details</a>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="main-btn">View Projects</a>
+          <a href="#contact" class="outline-btn">Contact Me</a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h3>06+</h3>
+            <p>Skills</p>
+          </div>
+          <div>
+            <h3>03+</h3>
+            <p>Projects</p>
+          </div>
+          <div>
+            <h3>DIU</h3>
+            <p>Student</p>
+          </div>
+        </div>
       </div>
 
-      <div class="project-card">
-        <h3>SQL Lab Project</h3>
-        <p>
-          A database practice project using SQL queries, joins, grouping,
-          ordering, and table relationships.
-        </p>
-        <a href="#">View Details</a>
+      <div class="hero-profile reveal delay-1">
+        <div class="profile-card">
+          <div class="profile-ring">
+            <div class="profile-img">NC</div>
+          </div>
+          <h2>Nahum Chowdhury</h2>
+          <p>Software Engineering Student</p>
+
+          <div class="profile-tags">
+            <span>C Programmer</span>
+            <span>Web Learner</span>
+            <span>SQL Practice</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide about-slide" id="about">
+      <div class="section-heading reveal">
+        <p>INTRODUCTION</p>
+        <h2>About <span>Me</span></h2>
       </div>
 
-      <div class="project-card">
-        <h3>C Programming Practice</h3>
-        <p>
-          Problem-solving practice using loops, arrays, functions,
-          conditions, and basic algorithms in C.
-        </p>
-        <a href="#">View Details</a>
+      <div class="about-container">
+        <div class="about-card reveal delay-1">
+          <h3>Who am I?</h3>
+          <p>
+            I am a Software Engineering student at Daffodil International University.
+            I am interested in programming, web development, database management,
+            problem solving, and practical software projects.
+          </p>
+        </div>
+
+        <div class="about-card reveal delay-2">
+          <h3>My Goal</h3>
+          <p>
+            My goal is to improve my technical skills step by step and become capable
+            of building professional software, websites, and real-world applications.
+          </p>
+        </div>
+
+        <div class="about-card reveal delay-3">
+          <h3>What I Like</h3>
+          <p>
+            I enjoy learning new technologies, solving coding problems, creating clean
+            user interfaces, and understanding how software systems work.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="section-title">
-      <p>Get In Touch</p>
-      <h2>Contact</h2>
-    </div>
+    <section class="slide skills-slide" id="skills">
+      <div class="section-heading reveal">
+        <p>WHAT I WORK WITH</p>
+        <h2>Skills & <span>Expertise</span></h2>
+      </div>
 
-    <div class="contact-box">
-      <p>Email:nahumchowdhury123@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/NahumChowdhury">github.com/NahumChowdhury</a></p>
-      <p>Location: Bangladesh</p>
-    </div>
-  </section>
+      <div class="skill-tabs reveal delay-1">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="language">Languages</button>
+        <button class="tab-btn" data-category="web">Web Core</button>
+        <button class="tab-btn" data-category="database">Database</button>
+        <button class="tab-btn" data-category="tool">Tools</button>
+      </div>
+
+      <div class="skills-grid reveal delay-2">
+        <div class="skill-box" data-category="language">
+          <div class="skill-icon c-icon">C</div>
+          <h3>C Programming</h3>
+          <span></span>
+        </div>
+
+        <div class="skill-box" data-category="web">
+          <div class="skill-icon html-icon">HTML</div>
+          <h3>HTML5</h3>
+          <span></span>
+        </div>
+
+        <div class="skill-box" data-category="web">
+          <div class="skill-icon css-icon">CSS</div>
+          <h3>CSS3</h3>
+          <span></span>
+        </div>
+
+        <div class="skill-box" data-category="language">
+          <div class="skill-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <span></span>
+        </div>
+
+        <div class="skill-box" data-category="database">
+          <div class="skill-icon sql-icon">SQL</div>
+          <h3>SQL</h3>
+          <span></span>
+        </div>
+
+        <div class="skill-box" data-category="tool">
+          <div class="skill-icon git-icon">Git</div>
+          <h3>GitHub</h3>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide projects-slide" id="projects">
+      <div class="section-heading reveal">
+        <p>MY WORK</p>
+        <h2>Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal delay-1">
+          <div class="project-number">01</div>
+          <h3>Employee Management System</h3>
+          <p>
+            A software project for managing employee information, salary,
+            attendance, performance, deleted history, and salary reports.
+          </p>
+          <div class="project-tags">
+            <span>C</span>
+            <span>File Handling</span>
+            <span>Management</span>
+          </div>
+          <a href="#">View Details</a>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-number">02</div>
+          <h3>SQL Lab Project</h3>
+          <p>
+            A database practice project using table creation, joins, grouping,
+            ordering, filtering, relationships, and SQL queries.
+          </p>
+          <div class="project-tags">
+            <span>SQL</span>
+            <span>Database</span>
+            <span>XAMPP</span>
+          </div>
+          <a href="#">View Details</a>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-number">03</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A modern portfolio website to showcase my skills, education,
+            projects, contact information, and resume.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="#">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide education-slide" id="education">
+      <div class="section-heading reveal">
+        <p>ACADEMIC BACKGROUND</p>
+        <h2>Education & <span>Learning</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>BSc in Software Engineering</h3>
+            <p>Daffodil International University</p>
+            <span>Currently Studying</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Programming Practice</h3>
+            <p>C programming, problem solving, algorithms, and data structures.</p>
+            <span>Ongoing</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Web Development Learning</h3>
+            <p>HTML, CSS, JavaScript, GitHub Pages, and portfolio development.</p>
+            <span>Ongoing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide contact-slide" id="contact">
+      <div class="section-heading reveal">
+        <p>GET IN TOUCH</p>
+        <h2>Contact <span>Me</span></h2>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info reveal delay-1">
+          <h3>Let's Connect</h3>
+          <p>
+            I am always open to learning, collaboration, project ideas,
+            and opportunities to improve my skills.
+          </p>
+
+          <div class="contact-item">
+            <span>Email</span>
+            <p>nahumchowdhury123@gmail.com</p>
+          </div>
+
+          <div class="contact-item">
+            <span>GitHub</span>
+            <p>github.com/NahumChowdhury</p>
+          </div>
+
+          <div class="contact-item">
+            <span>Location</span>
+            <p>Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal delay-2">
+          <h3>Portfolio Status</h3>
+          <p>Modern design, smooth animation, responsive layout, and GitHub Pages ready.</p>
+          <a href="cv.pdf" class="main-btn">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="slide-indicator">
+    <a href="#home" class="dot active"></a>
+    <a href="#about" class="dot"></a>
+    <a href="#skills" class="dot"></a>
+    <a href="#projects" class="dot"></a>
+    <a href="#education" class="dot"></a>
+    <a href="#contact" class="dot"></a>
+  </div>
 
   <footer>
     <p>© 2026 Nahum Chowdhury. All Rights Reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
-   
